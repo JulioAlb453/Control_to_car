@@ -1,4 +1,30 @@
-<button (click)="moveCar('izquierda')">Izquierda</button>
-<button (click)="moveCar('derecha')">Derecha</button>
-<button (click)="moveCar('arriba')">Arriba</button>
-<button (click)="moveCar('abajo')">Abajo</button>
+<div class="content-wrapper">
+    <div class="buttons-container">
+      <button
+        (click)="moveCar('arriba')"
+        class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded"
+      >
+        Arriba
+      </button>
+      <div class="flex space-x-4">
+        <button
+          (click)="moveCar('izquierda')"
+          class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Izquierda
+        </button>
+        <button
+          (click)="moveCar('derecha')"
+          class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Derecha
+        </button>
+      </div>
+      <button
+        (click)="moveCar('abajo')"
+        class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded"
+      >
+        Abajo
+      </button>
+    </div>
+  </div>
